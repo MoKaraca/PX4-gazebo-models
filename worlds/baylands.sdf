@@ -1,5 +1,13 @@
 <sdf version='1.9'>
   <world name='baylands'>
+    <!-- Required for NavSat (GPS) and Magnetometer sensors in Gazebo Harmonic -->
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>47.3977</latitude_deg>
+      <longitude_deg>8.5456</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
     <physics type="ode">
       <max_step_size>0.004</max_step_size>
       <real_time_factor>1.0</real_time_factor>
